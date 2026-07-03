@@ -1,0 +1,404 @@
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+.stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(white 1px,transparent 1px);
+    background-size:40px 40px;
+    opacity:.3;
+    animation:moveStars 60s linear infinite;
+    z-index:-1;
+}
+
+@keyframes moveStars{
+    from{transform:translateY(0);}
+    to{transform:translateY(500px);}
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:4rem;
+    font-weight:900;
+    text-transform:uppercase;
+    background:linear-gradient(90deg,#00d9ff,#5f7cff,#ffffff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-shadow:0 0 20px #00bfff;
+}
+
+.tagline{
+    margin-top:20px;
+    font-size:1.3rem;
+    color:#bcdcff;
+}
+
+.btn{
+    margin-top:40px;
+    padding:16px 40px;
+    text-decoration:none;
+    color:white;
+    border:2px solid #00bfff;
+    border-radius:50px;
+    box-shadow:0 0 20px #00bfff;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#00bfff;
+    transform:scale(1.05);
+}
+
+.project{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.project h2{
+    color:#00bfff;
+    margin-bottom:10px;
+}
+
+.project h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.project p{
+    color:#d0d8ff;
+    max-width:600px;
+    margin:auto;
+    font-size:1.1rem;
+}
+.hero-image{
+    width:320px;
+    max-width:90%;
+    margin:35px 0;
+    filter:drop-shadow(0 0 35px #00bfff);
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0);}
+}.navbar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:12px 10px;
+
+}
+
+.nav-logo{
+    color:#00ccff;
+}
+.nav-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#00ccff;
+}
+.about{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.about h2{
+    color:#00bfff;
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#ddd;
+}
+<section id="contact" class="contact">
+
+    <h2>CONTACT US</h2>
+
+  <p>Email: muhammadkhamis789@gmail.com</p>
+
+    <p>Facebook: @aquaboy</p>
+
+    <p>Location: Kenya</p>
+
+</section>
+.contact{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    color:#00bfff;
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+.contact p{
+    color:#ddd;
+    margin:10px 0;
+    font-size:1.1rem;
+}
+.contact{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:2.5rem;
+    color:#00bfff;
+    margin-bottom:20px;
+}
+
+.contact p{
+    color:#ddd;
+    font-size:1.1rem;
+    margin:12px 0;
+}
+.contact a{
+    color:#00bfff;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.contact a:hover{
+    color:white;
+    text-shadow:0 0 10px #00bfff;
+}.projects{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.projects h2{
+    font-size:2.5rem;
+    color:#00bfff;
+    margin-bottom:40px;
+}
+
+.project-card{
+    max-width:380px;
+    margin:auto;
+    background:rgba(255,255,255,0.08);
+    border:1px solid #00bfff;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 0 25px rgba(0,191,255,.4);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 40px rgba(0,191,255,.8);
+}
+
+.project-card img{
+    width:100%;
+    border-radius:15px;
+}
+
+.project-card h3{
+    color:#00bfff;
+    margin:20px 0 10px;
+}
+
+.project-card p{
+    color:#ddd;
+    line-height:1.6;
+}
+
+.project-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:#00bfff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.project-btn:hover{
+    background:#0088cc;
+}.nav-links a{
+    color:white;
+    text-decoration:none;
+    padding:8px 15px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    background:#00bfff;
+    color:black;
+    box-shadow:0 0 15px #00bfff;
+}.credits {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  padding: 20px;
+  margin-top: 40px;
+  opacity: 0.7;
+}
+.manga-page{
+    text-align:center;
+    margin:40px 0;
+}
+
+.manga-page img{
+    width:90%;
+    max-width:900px;
+    border-radius:12px;
+    box-shadow:0 0 25px rgba(0,180,255,0.5);
+}
+
+.navigation{
+    display:flex;
+    justify-content:space-between;
+    padding:30px;
+}
+
+.navigation a{
+    color:#4fc3ff;
+    text-decoration:none;
+    font-size:20px;
+}.read-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#007bff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.read-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00bfff;
+}.chapter-title{
+    text-align:center;
+    font-size:56px;
+    color:#66ccff;
+    text-shadow:0 0 20px #00bfff;
+    margin-top:30px;
+}
+
+.chapter-subtitle{
+    text-align:center;
+    color:white;
+    margin-bottom:20px;
+}
+
+.page-counter{
+    text-align:center;
+    color:#8fdcff;
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.manga-page{
+    text-align:center;
+    margin:40px 0;
+}
+
+.manga-page img{
+    width:95%;
+    max-width:1000px;
+    border-radius:12px;
+    box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+.navigation{
+    display:flex;
+    justify-content:space-between;
+    padding:30px;
+}
+
+.navigation a{
+    background:#0077ff;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.navigation a:hover{
+    box-shadow:0 0 20px #00bfff;
+    transform:scale(1.05);
+}.reader{
+    text-align:center;
+    margin:40px auto;
+}
+
+#mangaImage{
+    width:95%;
+    max-width:1000px;
+    border-radius:12px;
+    box-shadow:0 0 25px rgba(0,191,255,.5);
+}
+
+.reader-controls{
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.reader-controls button{
+    padding:12px 24px;
+    border:none;
+    border-radius:25px;
+    background:#0077ff;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.reader-controls button:hover{
+    box-shadow:0 0 20px #00bfff;
+}

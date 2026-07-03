@@ -1,0 +1,96 @@
+body{
+    background:#050816;
+    color:white;
+    text-align:center;
+    font-family:Arial,sans-serif;
+}
+
+.cp-image{
+    width:220px;
+    max-width:80%;
+    height:auto;
+    display:block;
+    margin:30px auto;
+}.read-btn{
+    display:inline-block;
+    margin:30px 0;
+    padding:15px 35px;
+    background:#00bfff;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-size:1.1rem;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(0,191,255,.6);
+    transition:.3s;
+}
+
+.read-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 35px rgba(0,191,255,.9);
+}
+.powers{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.powers h2{
+    color:#00bfff;
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+.power-card{
+    width:280px;
+    max-width:90%;
+    margin:15px auto;
+    padding:18px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid #00bfff;
+    border-radius:15px;
+    color:white;
+    box-shadow:0 0 15px rgba(0,191,255,.4);
+    transition:0.3s;
+}
+
+.power-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px rgba(0,191,255,.8);
+}.chapter-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    max-width:350px;
+    margin:40px auto;
+}
+
+.chapter-btn{
+    display:block;
+    padding:18px;
+    text-decoration:none;
+    color:white;
+    background:#00bfff;
+    border-radius:15px;
+    text-align:center;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(0,191,255,.5);
+    transition:0.3s;
+}
+
+.chapter-btn:hover{
+    transform:scale(1.03);
+}.credits{
+    color:#00bfff;
+    font-size:1rem;
+    text-align:center;
+    margin:10px 0;
+    font-style:italic;
+    letter-spacing:1px;
+}
+
+.tagline{
+    color:#cccccc;
+    font-size:1.1rem;
+    text-align:center;
+    margin-bottom:30px;
+}
