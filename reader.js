@@ -38,7 +38,9 @@ const pages = [
 let currentPage = 0;
 
 function updateReader() {
-    document.getElementById("mangaImage").src = pages[currentPage];
+    const image = document.getElementById("mangaImage");
+    image.src = pages[currentPage] + "?v=" + Date.now();
+
     document.getElementById("pageNumber").textContent =
         "Page " + (currentPage + 1) + " / " + pages.length;
 
@@ -47,20 +49,6 @@ function updateReader() {
 
     document.querySelector('button[onclick="previousPage()"]').disabled =
         currentPage === 0;
-}
-
-function nextPage() {
-    if (currentPage < pages.length - 1) {
-        currentPage++;
-        updateReader();
-    }
-}
-
-function previousPage() {
-    if (currentPage > 0) {
-        currentPage--;
-        updateReader();
-    }
 }
 
 window.onload = updateReader;
