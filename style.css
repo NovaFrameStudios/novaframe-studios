@@ -376,18 +376,47 @@ body{
     justify-content:center;
     align-items:center;
     gap:20px;
+.reader-controls{
+    margin:30px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:0 15px;
 }
 
 .reader-controls button{
-    padding:12px 24px;
+    padding:12px 20px;
+    min-width:110px;
     border:none;
     border-radius:25px;
     background:#0077ff;
     color:white;
     cursor:pointer;
     font-size:18px;
+    transition:.3s;
 }
 
 .reader-controls button:hover{
     box-shadow:0 0 20px #00bfff;
+}
+
+@media (max-width:600px){
+    .reader-controls{
+        gap:10px;
+    }
+
+    .reader-controls button{
+        flex:1 1 45%;
+        max-width:160px;
+        font-size:16px;
+        padding:12px;
+    }
+
+    .page-counter{
+        width:100%;
+        font-size:18px;
+        margin:10px 0;
+    }
 }
