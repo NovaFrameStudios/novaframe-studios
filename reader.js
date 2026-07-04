@@ -38,8 +38,7 @@ const pages = [
 let currentPage = 0;
 
 function updateReader() {
-    const image = document.getElementById("mangaImage");
-    image.src = pages[currentPage] + "?v=" + Date.now();
+    const image = document.getElementById("mangaImage").src = pages[currentPage] + "?t=" + new Date().getTime();
 
     document.getElementById("pageNumber").textContent =
         "Page " + (currentPage + 1) + " / " + pages.length;
