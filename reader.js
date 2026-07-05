@@ -28,3 +28,6 @@ function previousPage() {
 }
 
 updatePage();
+mangaImage.addEventListener("click", () => {
+    nextPage();
+});
