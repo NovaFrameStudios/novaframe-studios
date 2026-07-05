@@ -34,10 +34,6 @@ mangaImage.addEventListener("click", () => {
 let touchStartX = 0;
 let touchEndX = 0;
 
-mangaImage.addEventListener("touchstart", (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-});
-
 mangaImage.addEventListener("touchend", (e) => {
     touchEndX = e.changedTouches[0].screenX;
 
